@@ -1,0 +1,131 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Window - Group Chat App</title>
+    <link rel="stylesheet" href="css/chat.css">
+</head>
+<body>
+
+    <div class="chat-container">
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+
+            <div class="sidebar-header">
+                <h2>Group Chats</h2>
+                <span>💬</span>
+            </div>
+
+            <div class="chat-list">
+
+                <div class="chat-item active">
+                    <div class="group-avatar">D</div>
+
+                    <div class="chat-info">
+                        <h3>Developers Group</h3>
+                        <p>Let's discuss the project...</p>
+                    </div>
+
+                    <span class="chat-time">10:30 AM</span>
+                </div>
+
+                <div class="chat-item">
+                    <div class="group-avatar">F</div>
+
+                    <div class="chat-info">
+                        <h3>Friends Group</h3>
+                        <p>See you tomorrow!</p>
+                    </div>
+
+                    <span class="chat-time">Yesterday</span>
+                </div>
+
+                <div class="chat-item">
+                    <div class="group-avatar">S</div>
+
+                    <div class="chat-info">
+                        <h3>Study Group</h3>
+                        <p>Completed the assignment.</p>
+                    </div>
+
+                    <span class="chat-time">Yesterday</span>
+                </div>
+
+            </div>
+
+        </aside>
+
+        <!-- Main Chat Window -->
+        <main class="chat-window">
+
+            <!-- Chat Header -->
+            <header class="chat-header">
+
+                <div class="group-avatar">D</div>
+
+                <div class="header-info">
+                    <h2>Developers Group</h2>
+                    <p>Online</p>
+                </div>
+
+            </header>
+
+            <!-- Messages Area -->
+            <section class="messages-area" id="messagesArea">
+
+                <div class="message received">
+                    <div class="message-content">
+                        <p>Hello everyone!</p>
+                        <span class="message-time">10:25 AM</span>
+                    </div>
+                </div>
+
+                <div class="message received">
+                    <div class="message-content">
+                        <p>How is the project going?</p>
+                        <span class="message-time">10:26 AM</span>
+                    </div>
+                </div>
+
+                <div class="message sent">
+                    <div class="message-content">
+                        <p>It's going well. I'm working on the chat window.</p>
+                        <span class="message-time">10:28 AM</span>
+                    </div>
+                </div>
+
+                <div class="message received">
+                    <div class="message-content">
+                        <p>That's great! Keep it up.</p>
+                        <span class="message-time">10:30 AM</span>
+                    </div>
+                </div>
+
+            </section>
+
+            <!-- Message Input -->
+            <form class="message-input-area" id="messageForm">
+
+                <input
+                    type="text"
+                    id="messageInput"
+                    placeholder="Type a message..."
+                    autocomplete="off"
+                    required
+                >
+
+                <button type="submit">Send</button>
+
+            </form>
+
+        </main>
+
+    </div>
+
+    <script src="js/chat.js"></script>
+
+</body>
+</html>
